@@ -1,0 +1,28 @@
+<h3>Add grade</h3>
+
+<div style="width: 400px;">
+  <form (ngSubmit)="onSubmit()">
+
+    <div class="form-group">
+      <label for="name">Grade</label>
+      <input type="text" class="form-control" id="grade" required [(ngModel)]="grade.grade" name="grade">
+    </div>
+
+    <div class="form-group">
+      <label for="name">Note</label>
+      <input type="text" class="form-control" id="note" required [(ngModel)]="grade.note" name="note">
+    </div>
+
+    <div class="form-group">
+      <label for="name">Student</label>
+      <input type="number" class="form-control" id="studentId" required [(ngModel)]="grade.studentId" name="studentId">
+    </div>
+
+    <div class="form-group">
+      <label for="name">Subject</label>
+      <input type="number" class="form-control" id="subjectId" required [(ngModel)]="grade.subjectId" name="subjectId">
+    </div>
+
+    <button type="submit" class="btn btn-success">Submit</button>
+  </form>
+</div>
